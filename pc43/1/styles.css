@@ -1,0 +1,498 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: GothamBold, sans-serif;
+    font-size: 90px;
+    letter-spacing: 13px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+h2{
+    margin-top: 50px;
+    font-family: GothamBold, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+}
+
+.em-dash{
+    font-family: GothamRegular, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
+
+h3{
+    font-family: FuturaLight;
+    font-size: 28px;
+    color: #B6F3E8;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: GothamBold, sans-serif;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+p{
+    font-family: FuturaLight;
+}
+
+h5 {
+ font-family: FuturaLight;
+ font-size: 40px;
+ background-color: #B6F3E8;
+ color: #424746;
+ font-weight: 500;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/* ################### CABECERA ###################  */
+
+#header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    min-height:50px;
+    bottom: 30;
+    border-bottom: 5px solid rgb(201,201,201);
+}
+
+#logotipo img{
+    display: block;
+    margin: auto;
+    z-index: 1;
+    right: 35%;
+}
+
+#nav{
+    width:100%;
+    height: 80px;
+    background-color: white;
+    color: rgb(77,71,70);
+    font-family: GothamRegular, Arial, Helvetica;
+    font-size: 14px;
+}
+
+#nav ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 1090px;
+}
+
+#nav > ul > li{
+    line-height: 60px;
+    float: left;
+    border-top: 1px solid gray;
+    transition: all 300ms;
+    margin-top: 15px;
+}
+
+#nav > ul > li > a{
+    display: block;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: rgb(77,71,70);
+    text-decoration: none;
+}
+
+#nav > ul > li:hover{
+    border-top: 3px solid rgb(166, 241, 228);
+}
+
+#phonebutton{
+    position: absolute;
+    top: 32%;
+    right: 10%;
+    background-color: rgb(166, 241, 228);
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+#phonebutton a{
+    font-family: GothamBold;
+    font-size: 15px;
+    color: #424746;
+    transition: all 300ms;
+}
+
+#phonebutton:hover{
+    background-color: #a5a5a5;
+    transform: scale(1.1, 1.1);
+}
+
+#phonebutton:hover a{
+    color: white;
+}
+
+#location-links{
+    display: flex;
+    flex-direction: column;
+    column-count: 2;
+    position: absolute;
+    top: 58%;
+    right: 10%;
+    align-items: flex-end;
+}
+
+#location-links a{
+    font-family: GothamBold;
+    color: #424746;
+    line-height: 25px;
+}
+
+/* ################### VIDEO ###################  */
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding:0;
+    margin:0;
+    left: 0px;
+    top: 201px;
+    z-index: -1000;
+    overflow: hidden;
+}
+    
+#myVideo {
+    min-height: 100%;
+    min-width:100%; 
+    position:fixed;
+    top:0;
+    left:0;
+
+}
+
+/* ################### BODY – PARTE 1 ###################  */
+
+.content{
+    text-align: center;
+    padding: 50px;
+    background: rgb(77,71,70, 0.3);
+}
+
+#main-h3{
+    padding: 10px;
+}
+
+#main-p-homepage{
+    margin-top: 20px;
+}
+
+#main-p-homepage p{
+    display: block;
+    color: white;
+    text-align: justify;
+    font-size: 23px;
+    line-height: 30px;
+    margin: 3% 20%;
+}
+
+#call-me-text h4{
+    margin-bottom: 40px;
+}
+
+/* ################### BODY – PARTE 2 – WHY US? ###################  */
+
+.why-us-p{
+    color:white;
+    font-size: 22px;
+    line-height: 27px;
+    padding: 10px;
+}
+
+.why-us-h4{
+    text-align: left; 
+    font-size: 30px;
+}
+
+.fa-check-square{
+    font-size: 2.5em; 
+    color: rgb(166, 241, 228); 
+    margin: 10px;
+    margin-bottom: 0px;
+    transition: all 300ms;
+}
+
+.fa-check-square:hover{
+    transform: scale(1.2,1.2);
+}
+
+#flex-why{
+    display: flex;
+    flex-direction: column;
+    margin: 3% 15%;
+}
+
+.why-article{
+    width: 75%; 
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/* ################### CONTACTO ###################  */
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    background: rgb(242,242,242);
+    height: 500px;
+    padding: 30px;
+}
+
+#mapa{
+    float: left;
+    padding: 25px;
+}
+
+#contact-text{ 
+    float: left;
+    margin: 50px;
+    width: 425px;
+    overflow: hidden;
+}
+
+#contact-text p{
+    margin-top: 30px;
+    font-size: 19px;
+    line-height: 35px;
+}
+
+#phonebutton2{
+    display: block;
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 100px;
+    background-color: #a5a5a5;
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#phonebutton2 a{
+    display: block;
+    font-family: GothamBold;
+    font-size: 15px;
+    color: white;
+    transition: all 700ms;
+}
+
+#phonebutton2:hover{
+    background-color: rgb(166, 241, 228);
+    transform: scale(1.4, 1.4);
+}
+
+#phonebutton2:hover a{
+    color: #000000;
+}
+
+/* ################### FOOTER ###################  */
+
+footer{
+    padding-top: 25px;
+    background-color: rgb(65,65,65);
+    height: 175px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-btn{
+    background-color: rgb(166, 241, 228);
+    padding: 10px 10px 10px 10px;
+    border-radius: 4px;
+    transition: all 300ms;
+    cursor: pointer;
+    color: rgb(65,65,65);
+    font-family: GothamRegular;
+    font-weight: 900;
+    font-size: 15px;
+    margin: 8px;
+    width: 150px;
+    text-align: center;
+    align-self: center;
+}
+
+#footer-btns{
+    margin: 0px auto;
+    display: grid;
+    grid-template-areas: 
+        "sm contactar cm"
+        "ja contactar al";
+    width: 565px;
+}
+
+.ct{
+    font-family: GothamBold;
+    background-color: white;
+}
+
+/* buttons grid-areas */
+#sm {
+    grid-area: sm;
+}
+#ct {
+    grid-area: contactar;
+}
+
+#cm {
+    grid-area: cm;
+    
+}
+#ja {
+    grid-area: ja;
+}
+#al {
+    grid-area: al;
+}
+
+/* ################### CONÓCEME ################### */
+
+.conoceme{
+    width: 100%;
+    background-color: lightgray;
+}
+
+#c-picture{
+    background-image: url(../img/mama.jpg);
+    height: 750px;
+    background-position: 0px -150px;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    float: left;
+    margin: auto;
+    width: 49.8%;
+}
+
+#c-text{
+    float: right;
+    margin: 0;
+    height: 750px;
+    width: 49.8%;
+    overflow: hidden;
+}
+
+#c-text h2{
+    padding: 10%;
+}
+
+#c-text p{
+    font-size: 20px;
+    line-height: 1.6em;
+    padding: 0px 15%;
+    letter-spacing: 0.05em;
+    text-align: justify;
+}
+
+#t-pro{
+    display: block;
+    margin: 0px auto;
+    width: 200px;
+    background-color: white;
+    padding: 15px 20px 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms;
+    margin-top: 60px;
+}
+
+#t-pro a{
+    display: block;
+    font-family: GothamBold;
+    font-size: 15px;
+    color: black;
+    transition: all 700ms;
+    cursor: pointer;
+    text-align: center;
+}
+
+#t-pro:hover{
+    background-color: rgb(166, 241, 228, 0.8);
+    transform: scale(1.1, 1.1);
+}
+
+#t-pro:hover a{
+    color: #000000;
+}
+
+/* ################### TRAYECTORIA PROFESIONAL ################### */
+
+#trayectoria-profesional{
+    background-color: lightgray;
+}
+
+#cv{
+    margin: 40px 10% 40px 10%;
+}
+
+.cards-title{
+    font-family: GothamBold, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 5px;
+    margin-bottom: 12px;
+}
+
+.card{
+    padding: 20px 20px 0px 20px;
+}
+
+.card-title{
+    display: block;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.card-title2{
+    display: block;
+    font-weight: 900;
+    font-size: 18px;
+    border-bottom: 1px solid black; 
+    padding-bottom: 10px;
+}
+
+.card-subtitle{
+    font-weight: 500;
+    margin: 10px;
+    line-height: 24px;
+}
+
+.card-description{
+    font-weight: lighter;
+    display: block;
+    color: #545454;
+    line-height: 24px;
+    margin: 10px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+}
